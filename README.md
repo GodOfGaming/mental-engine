@@ -1,38 +1,16 @@
-# Serious Engine
+# Mental Engine
 ========================
 
-This is the source code for Serious Engine v.1.10, including the following projects:
-
-* `DedicatedServer`
-* `Ecc` The *Entity Class Compiler*, a custom build tool used to compile *.es files
-* `Engine` Serious Engine 1.10
-* `EngineGUI` Common GUI things for game tools
-* `EntitiesMP` All the entity logic
-* `GameGUIMP` Common GUI things for game tools
-* `GameMP` All the game logic
-* `Modeler` Serious Modeler
-* `RCon` Used to connect to servers using an admin password
-* `SeriousSam` The main game executable
-* `SeriousSkaStudio` Serious Ska Studio
-* `WorldEditor` Serious Editor
-* `DecodeReport` Used to decode crash *.rpt files
-* `Depend` Used to build a list of dependency files based on a list of root files
-* `LWSkaExporter` Exporter for use in LightWave
-* `MakeFONT` Used for generating *.fnt files
-* `Shaders` Compiled shaders
-* `GameAgent` The serverlist masterserver written in Python
-* `libogg`, `libvorbis` Third party libraries used for playing OGG-encoded ingame music (see http://www.vorbis.com/ for more information)
-
-These have been modified to run correctly under the recent version of Windows. (Tested: Win7 x64, Win8 x64, Win8.1 x64)
+This is the source code for Mental Engine, a Serious Engine source port made for the Serious Sam Platinum Edition project.
 
 Building
 --------
 
-To build Serious Engine 1, you'll need Visual Studio 2013 or 2015, Professional or Community edition ( https://www.visualstudio.com/post-download-vs?sku=community ).
+To build Mental Engine, you'll need Visual Studio 2013, Professional or Community edition ( https://www.visualstudio.com/post-download-vs?sku=community ).
 
 Do not use spaces in the path to the solution.
 
-Once you've installed Visual Studio and (optionally) DirectX8 SDK, you can build the engine solution (`/Sources/All.sln`). Press F7 or Build -> Build solution. The libraries and executables will be put into `\Bin\` directory (or `\Bin\Debug\` if you are using the Debug configuration).
+Once you've installed Visual Studio you can build the engine solution (`/Sources/All.sln`). Press F7 or Build -> Build solution. The libraries and executables will be put into `\Bin\` directory (or `\Bin\Debug\` if you are using the Debug configuration).
 
 Optional features
 -----------------
@@ -50,7 +28,7 @@ IFeel support is disabled in the open source version of Serious Engine 1 due to 
 Running
 -------
 
-This version of the engine comes with a set of resources (`\SE1_10.GRO`) that allow you to freely use the engine without any additional resources required. However if you want to open or modify levels from Serious Sam Classic: The First Encounter or The Second Encounter (including most user-made levels), you will have to copy the game's resources (.GRO files) into the engine folder. You can buy the original games on Steam, as a part of a bundle with Serious Sam Revolution ( http://store.steampowered.com/app/227780 )
+This version of the engine comes with a set of resources (`\SE1_10.GRO`) that allow you to freely use the engine without any additional resources required. However if you want to open or modify levels from Serious Sam: The First Encounter or The Second Encounter (including most user-made levels), you will have to copy the game's resources (.GRO files) into the engine folder. You can buy the original games on Steam, as a part of a bundle with Serious Sam Revolution ( http://store.steampowered.com/app/227780 )
 
 When running a selected project, make sure its project settings on Debugging is set to the right command:
 * For debug:
@@ -66,10 +44,22 @@ Common problems
 Before starting the build process, make sure you have a "Temp" folder in your development directory. If it doesn't exist, create it.
 SeriousSkaStudio has some issues with MFC windows that can prevent the main window from being displayed properly.
 
+Changelog
+---------
+
+29.10.2024:
+- Fixed the infamous weapon slowdown bug;
+
+Known issues
+------------
+
+- old demos don't play correctly, will need to record new demos
+- loading screen map is broken
+
 License
 -------
 
-Serious Engine is licensed under the GNU GPL v2 (see LICENSE file).
+Mental Engine is licensed under the GNU GPL v2 (see LICENSE file).
 
 Some of the code included with the engine sources is not licensed under the GNU GPL v2:
 
