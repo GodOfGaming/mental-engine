@@ -49,6 +49,7 @@ Changelog
 
 29.10.2024:
 - Fixed the infamous weapon slowdown bug;
+- Copied sources for Serious Sam: The Second Encounter to a separate branch;
 
 Known issues
 ------------
